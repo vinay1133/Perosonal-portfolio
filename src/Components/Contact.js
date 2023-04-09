@@ -69,13 +69,24 @@ export const Contact = () => {
                     type="text"
                     name="user_name"
                     placeholder="First Name"
+                    required
                   />
                 </Col>
                 <Col sm={6} className="px-1">
-                  <input type="text" name="last_name" placeholder="Last Name" />
+                  <input
+                    type="text"
+                    name="last_name"
+                    placeholder="Last Name"
+                    required
+                  />
                 </Col>
                 <Col sm={6} className="px-1">
-                  <input type="email" name="user_email" placeholder="Email" />
+                  <input
+                    type="email"
+                    name="user_email"
+                    placeholder="Email"
+                    required
+                  />
                 </Col>
                 <Col sm={6} className="px-1">
                   <input type="tel" name="phone" placeholder="Phone No." />
@@ -86,6 +97,7 @@ export const Contact = () => {
                     name="message"
                     placeholder="Message"
                     style={{ resize: "none" }}
+                    required
                   ></textarea>
                   <button type="submit">
                     <span>{buttonText}</span>

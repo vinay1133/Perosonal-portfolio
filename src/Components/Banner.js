@@ -65,7 +65,7 @@ export const Banner = () => {
                 >
                   <span className="tagline">Welcome to my portfolio</span>
                   <h1>
-                    {"Hi I'm Vinay "}
+                    {"Hi! I'm Vinay, "}
                     <span className="wrap" style={{ color: "burlywood" }}>
                       {text}
                     </span>

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/VHB.png";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -60,6 +60,17 @@ export const NavBar = () => {
               onClick={() => onUpdateActiveLink("projects")}
             >
               Projects
+            </Nav.Link>
+            <Nav.Link
+              href="#academics"
+              className={
+                activeLink === "academics"
+                  ? "active navbar-link"
+                  : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("academics")}
+            >
+              Academics
             </Nav.Link>
           </Nav>
           <span className="navbar-text">

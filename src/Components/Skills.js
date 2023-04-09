@@ -1,10 +1,12 @@
 import Carousel from "react-multi-carousel";
 import { Container, Row, Col } from "react-bootstrap";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import colorSharp from "../assets/img/color-sharp.png";
+import meter1 from "../assets/img/meter1.png";
+import meter2 from "../assets/img/meter2.png";
+import meter3 from "../assets/img/meter3.png";
+import meter4 from "../assets/img/meter4.png";
+import meter5 from "../assets/img/meter5.png";
+import meter6 from "../assets/img/meter6.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -55,27 +57,39 @@ export const Skills = () => {
                 className="skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Developement</h5>
+                  <img src={meter5} alt="Image" />
+                  <h5>C</h5>
+                </div>
+                <div className="item">
+                  <img src={meter4} alt="Image" />
+                  <h5>HTML/CSS</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Image" />
-                  <h5>Brand Identity</h5>
+                  <h5>Java</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <h5>Python</h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="Image" />
-                  <h5>Presentation</h5>
+                  <h5>ReactJS</h5>
+                </div>
+                <div className="item">
+                  <img src={meter6} alt="Image" />
+                  <h5>Problem Solving</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Image" />
+                  <h5>JavaScript</h5>
                 </div>
               </Carousel>
             </div>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp} />
+      {/* <img className="background-image-right" src={colorSharp} /> */}
     </section>
   );
 };

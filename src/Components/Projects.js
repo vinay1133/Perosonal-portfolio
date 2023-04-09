@@ -3,6 +3,9 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/Alumni.png";
 import projImg2 from "../assets/img/Society.png";
 import projImg3 from "../assets/img/Rubik.png";
+import projImg4 from "../assets/img/ByteNBA.jpg";
+import projImg5 from "../assets/img/UGCChecked.jpg";
+import projImg6 from "../assets/img/RythmicChillz.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -27,21 +30,21 @@ export const Projects = () => {
       imgUrl: projImg3,
     },
     {
-      title: "My Society",
+      title: "ByteNBA",
       description:
-        "A user friendly interface for a society to organize various aspects of the data, accessible to both, the management and residents of the society",
-      imgUrl: projImg2,
+        "An application for faculty members to manage college's NBA records",
+      imgUrl: projImg4,
     },
     {
-      title: "Alumni Network",
+      title: "UGC-Checked",
       description:
-        "An app which helps the newly admitted students to get in touch with the pass-outs",
-      imgUrl: projImg1,
+        "A web-app which maintains and reflects the list of genuine/fake universities across India for all stakeholders",
+      imgUrl: projImg5,
     },
     {
-      title: "RubikCuber",
+      title: "RythmicChillz",
       description: "An app to solve a scrambled cube accepted from user",
-      imgUrl: projImg3,
+      imgUrl: projImg6,
     },
   ];
   return (
@@ -65,7 +68,7 @@ export const Projects = () => {
               )}
             </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav
+              {/* <Nav
                 variant="pills"
                 className="nav-pills mb-5 justify-content-center align-items-center"
                 id="pills-tab"
@@ -79,7 +82,7 @@ export const Projects = () => {
                 <Nav.Item>
                   <Nav.Link eventKey="third">Tab3</Nav.Link>
                 </Nav.Item>
-              </Nav>
+              </Nav> */}
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
@@ -88,8 +91,8 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
-                <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
+                {/* <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
+                <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane> */}
               </Tab.Content>
             </Tab.Container>
           </Col>
